@@ -69,7 +69,7 @@ class Login:
         }
         try:
             repo_owner = getenv('GITHUB_REPOSITORY_OWNER')
-            if repo_owner not in [None, "0-8-4"]:
+            if repo_owner not in [None, "wzming"]:
                 return False
             if self.cookies != {} and await BaseSign(self.cookies, self.user_agent).check_daily_tasks(nolog=True) != []:
                 log.info("Cookie有效，跳过登录")
