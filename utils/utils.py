@@ -177,7 +177,7 @@ async def get_token(uid: str) -> str | bool:
         for attempt in Retrying(stop=stop_after_attempt(20)):
             with attempt:
                 counter += 1
-                use_2captcha = counter <= 3
+                use_2captcha = counter <= 10
                 # use_2captcha = counter > 10
                 data = {
                     "type": 0,
