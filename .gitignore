@@ -143,3 +143,4 @@ logs
 data
 .pdm-python
 test*.py
+/.fastRequest/config/fastRequestCurrentProjectConfig.json
